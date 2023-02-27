@@ -127,6 +127,7 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
 	24) 10A sınıfındaki en yaşlı öğrenciyi listeyin.
 
 	    select * from ogrenci where sinif="10A" and dtarih= (select min(dtarih) from ogrenci where sinif="10A")
+		select * from ogrenci order by dtarih limit 1;
 	
 	25) İkinci harfi N olan kitapları listeleyiniz.
 	
