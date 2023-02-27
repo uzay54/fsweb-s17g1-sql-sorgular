@@ -50,6 +50,7 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
 	6) Öğrenci tablosundaki 10A veya 10B sınıfındaki öğrencilerin adını, soyadını ve sınıfını listeleyiniz.
 
 	   select ograd, ogrsoyad, sinif from ogrenci where sinif in ("10A", "10B")
+	   select ograd, ogrsoyad, sinif from ogrenci where sinif = "10A" or sinif = "10B"
 	
 	
 	7) Öğrenci tablosundaki öğrencinin adını, soyadını ve numarasını okul numarası olarak listeleyiniz. (as kullanım örneği)
