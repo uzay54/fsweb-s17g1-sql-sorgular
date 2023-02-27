@@ -93,6 +93,7 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
 	16) Öğrenci numarası 30 ile 50 arasında olan Kız öğrencileri listeleyiniz.
 
 	    select *  from ogrenci where ogrno between 30 and 50  and cinsiyet="K"
+		select * from ogrenci where cinsiyet="K" and (ogrno between 30 and 50);
 	
 	17) Öğrencileri adına göre sıralayınız (alfabetik).
 
