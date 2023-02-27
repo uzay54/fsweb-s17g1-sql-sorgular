@@ -83,7 +83,7 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
 	
 	14) Sınıfı 10A veya 10B olan erkekleri listeleyiniz.
 
-	    select ograd, ogrsoyad, sinif, cinsiyet from ogrenci where (cinsiyet="E" and sinif="10A") or (cinsiyet="E" and sinif="10B")
+	    select * from ogrenci where cinsiyet="E" and sinif="10A" or cinsiyet="E" and sinif="10B"
 	
 	15) Öğrenci tablosunda doğum yılı 1989 olan öğrencileri listeleyiniz.
 
@@ -117,6 +117,7 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
 	22) Sayfa sayısı en fazla olan kitabı listeleyiniz.
 	
 	    select * from kitap where sayfasayisi=(select max(sayfasayisi) from kitap)
+	    select * from kitap order by sayfasayisi desc limit 1;
 	
 	23) Öğrenciler tablosundaki en genç öğrenciyi listeleyiniz.
 
