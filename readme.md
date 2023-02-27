@@ -151,3 +151,5 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
 	30) Öğrenci tablosunda aynı isimde kaçar öğrenci olduğunu bulmak istiyoruz. 
 	Öğrenci isimlerinin sayısını "adet" olarak öğrencilerin isimleri "isim" olarak listeleyin. 
 	[İPUCU: count() ve group by]
+
+	   select count(ograd) as Adet, ograd as İsim from ogrenci group by ograd
