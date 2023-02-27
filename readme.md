@@ -136,7 +136,7 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
 	
 	26) Öğrencileri sınıflarına göre gruplayarak listeleyin.
 
-	    select * from ogrenci order by sinif
+	    select ograd, ogrsoyad, sinif  from ogrenci group by sinif , ograd, ogrsoyad;
 	
 	27) Öğrencileri her sorgulamada sıralaması farklı olacak şekilde rastgele listeleyin. 
 	[İPUCU: rand() fonksiyonu]
